@@ -1,0 +1,21 @@
+header {
+	color: red;
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: 80px;
+}
+.col-sm {
+	border: solid 2px;
+	height: 100px;
+	text-align: center;
+	padding: 30px;
+	margin: 15px;
+}
+.output-box {
+	border: solid 2px;
+	height: 100px;
+	margin-left: 55px;
+	margin-right: 55px;
+
+
+}
