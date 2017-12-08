@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Gary's Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <form name="cal">
+            <header>Dang Calculator</header>
+            <input type="text" class="output-box" name="input" value="" id="outputBox"> 0.00
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <input type="button" id="btnOne" value=" 1 " onclick="cal.input.value+='1'" class="bg-light col-sm btn btn-secondary"></input>
+        <input type="button" id="btnTwo" value=" 2 " onclick="cal.input.value+='2'" class="bg-light col-sm btn btn-secondary"></input>
+        <input type="button" id="btnThree" value=" 3 " onclick="cal.input.value+='3'" class="bg-light col-sm btn btn-secondary"></input>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <input type="button" id="btnFour" value=" 4 " onclick="cal.input.value+='4'" class="bg-light col-sm btn btn-secondary"></input>
+        <input type="button" id="btnFive" value=" 5 " onclick="cal.input.value+='5'" class="bg-light col-sm btn btn-secondary"></input>
+        <input type="button" id="btnSix" value=" 6 " onclick="cal.input.value+='6'" class="bg-light col-sm btn btn-secondary"></input>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <input type="button" id="btnSeven" value=" 7 " onclick="cal.input.value+='7'" class="bg-light col-sm btn btn-secondary"></input>
+        <input type="button" id="btnEight" value=" 8 " onclick="cal.input.value+='8'" class="bg-light col-sm btn btn-secondary"></input>
+        <input type="button" id="btnNine" value=" 9 " onclick="cal.input.value+='9'" class="bg-light col-sm btn btn-secondary"></input>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <input type="button" id="btnZero" value=" 0 " onclick="cal.input.value+='0'" class="bg-light col-sm btn btn-secondary"></input>
+        <input type="button" id="btnDot" value=" . " onclick="cal.input.value+='.'" class="bg-light col-sm btn btn-secondary"></input>
+        <input type="button" id="btnPlus" value=" + " onclick="cal.input.value+='+'" class="bg-light col-sm btn btn-secondary"></input>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <input type="button" id="btnMinus" value=" - " onclick="cal.input.value+='-'" class="bg-light col-sm btn btn-secondary"></input>
+        <input type="button" id="btnTimes" value=" x " onclick="cal.input.value+='*'" class="bg-light col-sm btn btn-secondary"></input>
+        <input type="button" id="btnDivided" value=" / " onclick="cal.input.value+='/'" class="bg-light col-sm btn btn-secondary"></input>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <input type="button" id="btnEquals" value=" = " onclick="result()" class="bg-light col-sm btn btn-secondary"></input>
+        <input type="button" id="btnClear" value=" C " onclick="reset()" class="btnc-size bg-light col-sm btn btn-secondary"></input>
+    </div>
+    </form>
+    </div>
+    <script>
+    
+
+    function result() {
+        cal.input.value = eval(cal.input.value);
+    }
+
+    function reset() {
+        cal.input.value = null;
+    }
+
+    function delChar(i) {
+        cal.input.value = cal.input.value.substring(0, cal.input.value.length - 1);
+    }
+
+
+    // function sqrt() {
+    //     cal.input.value = Math.sqrt(cal.input.value);
+    // }
+
+    // function sqr() {
+    //     cal.input.value = cal.input.value * cal.input.value;
+    // }
+
+    // function inverse() {
+    //     cal.input.value = 1.00 / cal.input.value;
+    // }
+
+
+    
+
+    //     var buttonClicked = function (x) {
+    //     		console.log(x)
+    //     		document.querySelector("#outputBox").innerHTML = x;}
+
+    //     var leftNumber = "";
+    //     var operator = "";
+    //     var rightNumber = "";
+
+    // //     var buttonTwo = document.querySelector("#btnTwo");
+    //     var submitButton = document.querySelector("#btnEquals");
+
+    // console.log("first button click: " + buttonOne.value);
+    // console.log("second button click: " + buttonTwo.value);
+
+    // buttonClicked.addEventListener("click", function()
+    // 	)
+
+
+    // btnOne.addEventListener("click", function(){
+
+    // // })
+    //     submitButton.addEventListener("click", function() {
+    // //                 if (localStorage.taskCount)
+    // //                     localStorage.taskCount = Number(localStorage.taskCount) + 1;
+    // //                         else localStorage.taskCount = "1";
+
+    // //                       localStorage["x" + localStorage.taskCount] = buttonOne.value;
+    // //                       localStorage["y" + localStorage.taskCount] = buttonTwo.value;	
+    // //                       displayTasksFromLocalStorage();		
+    // //                     });
+    // });    function displayTasksFromLocalStorage() {
+    //     	var answerToDisplay = this.value;
+
+
+    //     };
+    </script>
+</body>
+
+</html>l

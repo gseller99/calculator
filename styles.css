@@ -1,25 +1,60 @@
+body {
+	background-color: black;
+	/*font-family: none;*/
+}
 header {
 	color: red;
 	text-align: center;
 	padding-bottom: 30px;
-	font-size: 80px;
+	font-size: 100px;
 	margin-top: 50px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
+	margin-top: 15px;
 }
+
+
 .col-sm {
-	border: solid 2px;
+	border: solid 4px;
+	border-color: blue;
 	height: 150px;
 	text-align: center;
 	padding: 30px;
 	margin: 15px;
 	font-size: 55px;
+	font-weight: bolder;
 }
 .output-box {
-	border: solid 2px;
-	height: 100px;
+	width: 865px;
+	border: solid 4px;
+	height: 150px;
 	margin-left: 55px;
 	margin-right: 55px;
 	margin-bottom: 50px;
+	font-size: 80px;
+	font-weight: bolder;
+	text-align: bottom;
+	background-color: white;
 
-
+}
+.btn {
+	/*justify-content: center;*/
+	color: blue;
+	border: solid 4px;
+	height: 150px;
+	margin-left: 55px;
+	margin-right: 55px;
+	margin-bottom: 50px;
+	font-size: 70px;
+	font-weight: bolder;
+	background-color: gray;
+	/*text-align: center;
+*/
+}
+.btn-group {
+	display: flex;
+	margin-left: 55px;
+}
+.btnc-size{
+	width: 400px;
+	font-style: italic;
 }
